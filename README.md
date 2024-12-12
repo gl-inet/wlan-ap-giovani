@@ -1,3 +1,6 @@
+# For Giovani
+Init from https://github.com/Telecominfraproject/wlan-ap/tree/v3.2.1
+
 # OpenWiFi AP NOS
 
 OpenWrt-based access point network operating system (AP NOS) for TIP OpenWiFi.
