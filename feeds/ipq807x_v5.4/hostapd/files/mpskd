@@ -297,7 +297,7 @@ function auth_cb(msg) {
 	case 'sta_auth':
 		return {
 			psk: sta_auth_psk(data.iface, data.sta),
-			force_psk: true,
+			force_psk: false,
 		};
 	case 'sta_connected':
 		if (data.psk_idx == null)
