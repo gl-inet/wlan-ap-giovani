@@ -1,5 +1,42 @@
 # For Giovani
-Init from https://github.com/Telecominfraproject/wlan-ap/tree/v3.2.1
+This repository is based on https://github.com/Telecominfraproject/wlan-ap/tree/v3.2.1.
+
+## Changes
+
+```shell
+git log --format='%h %s' 2633a64713fd201dd68d3cfdc3dca9090b126999..
+7b481856 profiles: Add `gl_axt1800.yml`
+3fce9972 hostapd: Fix setup WiFi fail
+96b59838 mac80211: Support scan on AP iface.
+f4e1045a ipq60xx: Fix sdcc1 apps clk src ops
+bb237fe6 base-files: Revert `patches/0013-base-files-sysupgrade-always-assume-n-if-f-is-not-pr.patch`
+61c68b52 base-files: Revert `patches/0010-base-files-set-default-password-to-openwifi.patch`
+904352e9 image: factory image u-boot web compatibility
+```
+
+## Building
+
+```shell
+./setup.py -s
+cd openwrt
+./scripts/gen_config.py gl_axt1800
+make -j10
+```
+
+## Enable WiFi
+
+```shell
+uci set wireless.radio0.disabled='0'
+uci set wireless.radio1.disabled='0'
+uci set wireless.default_radio0.ssid='Giovani-5G'
+uci set wireless.default_radio0.encryption=psk2
+uci set wireless.default_radio0.key=12345678
+uci set wireless.default_radio1.ssid='Giovani-2G'
+uci set wireless.default_radio1.encryption=psk2
+uci set wireless.default_radio1.key=12345678
+uci commit wireless
+wifi
+```
 
 # OpenWiFi AP NOS
 
