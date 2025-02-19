@@ -33,6 +33,12 @@
 			function = "sd_card";
 			bias-pull-up;
 		};
+		ldo {
+			pins = "gpio66";
+			function = "gpio";
+			bias-pull-up;
+			output-high;
+		};
 	};
 
 	pwm_pins: pwm_pinmux {
@@ -85,5 +91,6 @@
 	pinctrl-names = "default";
 	cd-gpios = <&tlmm 62 1>;
 	/delete-property/ vqmmc-supply;
+	/delete-property/ mmc-pwrseq;
 	status = "ok";
 };
