@@ -5,15 +5,6 @@ This repository is based on https://github.com/Telecominfraproject/wlan-ap/tree/
 
 ```shell
 git log --format='%h %s' 2633a64713fd201dd68d3cfdc3dca9090b126999..
-30d19538 gl-axt1800: fix dts for sd card
-38f673ba gl-ax1800: use BTN_MODE for mode button
-7b481856 profiles: Add `gl_axt1800.yml`
-3fce9972 hostapd: Fix setup WiFi fail
-96b59838 mac80211: Support scan on AP iface.
-f4e1045a ipq60xx: Fix sdcc1 apps clk src ops
-bb237fe6 base-files: Revert `patches/0013-base-files-sysupgrade-always-assume-n-if-f-is-not-pr.patch`
-61c68b52 base-files: Revert `patches/0010-base-files-set-default-password-to-openwifi.patch`
-904352e9 image: factory image u-boot web compatibility
 ```
 
 ## Building
