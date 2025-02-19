@@ -5,6 +5,8 @@ This repository is based on https://github.com/Telecominfraproject/wlan-ap/tree/
 
 ```shell
 git log --format='%h %s' 2633a64713fd201dd68d3cfdc3dca9090b126999..
+30d19538 gl-axt1800: fix dts for sd card
+38f673ba gl-ax1800: use BTN_MODE for mode button
 7b481856 profiles: Add `gl_axt1800.yml`
 3fce9972 hostapd: Fix setup WiFi fail
 96b59838 mac80211: Support scan on AP iface.
